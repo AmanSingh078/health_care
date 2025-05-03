@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM6g5n4g5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e" crossorigin="anonymous">
     <style>
-        body { font-family: 'Arial', sans-serif; background: url('IMAGE/background blue.gif'); }
+        body { font-family: 'Arial', sans-serif; background: url('IMAGE/WhatsApp Image 2025-03-23 at 04.17.07_63c0d56d.jpg'); }
         .glass { background: rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
         #header {
             height: 60vh; /* Adjusted height for the header */
-            background-image: url('IMAGE/header-bg.jpg'); /* Set your header background image */
+            background-image: url('IMAGE/k7cxz7qunpzc6hntjwcl.gif'); /* Set your header background image */
             background-size: cover; /* Ensure the background image covers the header */
             background-position: center; /* Center the background image */
             color: rgb(87, 15, 15); /* Set text color to white for better contrast */
@@ -19,7 +19,7 @@
         .card {
             background-size: cover; /* Ensure the background image covers the card */
             background-position: center; /* Center the background image */
-            color: white; /* Set text color to white for better contrast */
+            color: rgb(36, 178, 86); /* Set text color to white for better contrast */
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .card:hover {
@@ -32,9 +32,9 @@
         function changeHeaderBackground() {
             const header = document.getElementById('header');
             const images = [
-                'url("IMAGE/WhatsApp Image 2025-03-23 at 03.06.19_c89ca9d3.jpg")',
-                'url("IMAGE/WhatsApp Image 2025-03-23 at 03.58.41_e9ce8ec5.jpg")',
-                'url("IMAGE/WhatsApp Image 2025-03-23 at 03.15.47_618d0085.jpg")'
+               
+                  'url("IMAGE/k7cxz7qunpzc6hntjwcl.gif")'
+            
             ];
             let index = 0;
 
@@ -50,12 +50,42 @@
 </head>
 
 <body>
-    <header id="header" class="py-6 text-center text-5xl font-extrabold shadow-xl w-full flex items-center justify-center">
-        <div>
-            <i class="fas fa-heart mr-2"></i> <!-- Added heart icon -->
-            <h1>Welcome To Whisper Well</h1>
+    <header id="header" class="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-10 shadow-xl text-white">
+        <div class="flex flex-col items-center justify-center text-center space-y-4 animate-slide-fade-in">
+          
+          <!-- Glowing heart and heading -->
+          <div class="flex items-center space-x-4 text-6xl font-extrabold drop-shadow-lg">
+            <i class="fas fa-heart text-red-400 animate-glow-heart"></i>
+            <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-white to-yellow-200">
+              Welcome to WhisperWell
+            </h1>
+          </div>
+      
+          <!-- Beautiful tagline -->
+          <p class="text-2xl font-light italic tracking-wide text-white/90 animate-fade-in delay-300">
+            Where Every Voice Finds Peace 🌙
+          </p>
         </div>
-    </header>
+      </header>
+      
+      <!-- Custom Animations -->
+      <style>
+      @keyframes slide-fade-in {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes glow-heart {
+        0%, 100% { text-shadow: 0 0 10px #ff6b81, 0 0 20px #ff6b81; }
+        50% { text-shadow: 0 0 20px #ff4b61, 0 0 30px #ff4b61; }
+      }
+      .animate-slide-fade-in {
+        animation: slide-fade-in 1s ease-out forwards;
+      }
+      .animate-glow-heart {
+        animation: glow-heart 2s infinite;
+      }
+      </style>
+      
     <nav class="bg-white shadow-lg py-4 flex justify-center space-x-10 text-blue-600 font-semibold text-lg rounded-b-lg w-full">
         <a href="he.html" class="flex items-center hover:text-blue-800 transition duration-300">
             <i class="fas fa-volume-up mr-2"></i> Voice to Medicine Reminder
@@ -81,19 +111,24 @@
             <p class="mb-6">Set and track your fitness goals with AI-powered analytics and motivation.</p>
             <a href="excise.html" class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-800 shadow-lg transition duration-300">Track Progress</a>
         </section>
-        <section id="mood" class="glass shadow-2xl text-gray-800 transform transition duration-500 hover:scale-105 card" style="background-image: url('IMAGE/mood-bg.jpg');">
+        <section id="mood" class="glass shadow-2xl text-gray-800 transform transition duration-500 hover:scale-105 card" style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbalanced-diet-chart&psig=AOvVaw3GEzwZkBkjp5t5Xvu2GjWE&ust=1746276571159000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDW66nphI0DFQAAAAAdAAAAABAE');">
             <h2 class="text-3xl font-bold mb-4">📊 Medbot</h2>
             <p class="mb-6">PROVIDING BENEFICIAL SELF CARE EXERCISES AND ROUTINE.</p>
             <a href="ai.html" class="bg-orange-600 text-white px-6 py-3 rounded-full hover:bg-orange-800 shadow-lg transition duration-300">Chat with Medbot</a>
         </section>
         <section id="diet" class="glass shadow-2xl text-gray-800 transform transition duration-500 hover:scale-105 card" style="background-image: url('IMAGE/diet-bg.jpg');">
             <h2 class="text-3xl font-bold mb-4">🥗 Diet Planner</h2>
-            <p class="mb-6">Create personalized meal plans and track your nutrition for a healthier lifestyle.</p>
+            <p class="mb-6">Take control of your health with personalized meal plans tailored to your goals and dietary needs. Effortlessly track your nutrition, monitor progress, and make smarter food choices for a balanced, healthier lifestyle.</p>
             <a href="diet.html" class="bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-800 shadow-lg transition duration-300">Plan Your Diet</a>
         </section>
+        <section class="shadow-2xl transform transition duration-500 hover:scale-105 card overflow-hidden rounded-2xl">
+            <div class="flex items-center justify-center h-80">
+              <img src="IMAGE/original-3f028f30f7f023f692a0d341f2ca3741.gif" alt="Animated Illustration" class="h-full object-contain" />
+            </div>
+          </section>
         <section id="disease" class="glass shadow-2xl text-gray-800 transform transition duration-500 hover:scale-105 card" style="background-image: url('IMAGE/disease-bg.jpg');">
             <h2 class="text-3xl font-bold mb-4">🩺 Early Disease Prediction</h2>
-            <p class="mb-6">Utilize AI to identify potential health risks and take proactive measures.</p>
+            <p class="mb-6">Leverage the power of AI to detect early signs of potential health risks by analyzing your lifestyle, . Stay one step ahead with personalized recommendations that empower you to take proactive steps toward long-term wellness.</p>
             <a href="disease.html" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-800 shadow-lg transition duration-300">Predict Disease</a>
         </section>
         <section id="treatment" class="glass shadow-2xl text-gray-800 transform transition duration-500 hover:scale-105 card" style="background-image: url('IMAGE/treatment-bg.jpg');">
@@ -112,6 +147,8 @@
             <p class="mb-6">Have questions or feedback? Reach out to us for assistance!</p>
             <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-800 shadow-lg transition duration-300">Get in Touch</a>
         </section>
+       
+          
     </main>
     <footer class="bg-blue-900 text-white text-center py-6 mt-10 text-lg font-semibold shadow-xl w-full">
         &copy; 2025 Whisper Well. All rights reserved.

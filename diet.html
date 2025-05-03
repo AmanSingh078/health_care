@@ -52,6 +52,15 @@
             outline: none;
             box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
         }
+        #loaderGif {
+  display: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -136,9 +145,13 @@
         <label for="userInput">Enter your Disease:</label>
         <input type="text" id="userInput" placeholder="e.g., Write Your Disease or Health Condition">
         <button onclick="generateMealPlan()"><i class="fas fa-check"></i> Get Meal Plan</button>
+        
 
         <div class="meal-plan" id="mealPlan"></div>
     </div>
+    <div id="loaderGif">
+        <img src="IMAGE/3a15db4084af78963434fc164538de65.gif" alt="Loading..." width="300" />
+      </div>
 
     <script>
         const mealDatabase = {
